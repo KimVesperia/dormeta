@@ -1,0 +1,19 @@
+// Buttons
+.btn {
+    background-color: $color-primary;
+    color: $color-white;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: rem(15);
+    text-transform: uppercase;
+    padding: rem(18) rem(30);
+    // FIX FONT SPACING
+    padding-bottom: rem(15);
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+}

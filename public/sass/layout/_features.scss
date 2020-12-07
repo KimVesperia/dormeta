@@ -1,0 +1,37 @@
+.features {
+    grid-column: center-start / center-end;
+
+    margin: rem(150) 0;
+
+    display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    //responsive
+    //grid item min 250px width
+    grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
+    gap: rem(60);
+    align-items: start; //all items to top
+
+    @include respond($bp-700) { // max-width < 700px
+        margin: rem(75) 0;
+    }
+}
+
+.feature {
+
+    display: grid;
+    grid-template-columns: min-content 1fr; //width of icon
+    row-gap: rem(15);
+    column-gap: rem(25);
+
+    &__icon {
+        fill: $color-primary;
+        @include same-dim(rem(45));
+        transform: translateY(rem(-10));
+
+        grid-row: 1 / span 2;
+    }
+
+    &__text {
+        font-size: rem(17);
+    }
+}

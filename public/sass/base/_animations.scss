@@ -1,0 +1,53 @@
+// Animations
+
+/* KEYFRAMES */
+
+// for pulsing logo
+@keyframes pulsate-1 {
+    /* browser performance best with only 2 different properties max */
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+// pulsing effect
+@keyframes pulsate-2 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+// for btt
+@keyframes moveInbtt {
+    /* browser performance best with only 2 different properties max */
+    0% {
+        transform: translateX(15rem);
+    }
+
+    80% {
+        /* transform: translateX(0px); */
+    }
+
+    100% {
+        /* default final state */
+        transform: translate(0);
+    }
+}
+

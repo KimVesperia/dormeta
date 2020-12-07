@@ -1,0 +1,67 @@
+// Sass & CSS Variables
+
+/* CUSTOM PROPERTY / CSS Variables */
+:root {
+    // COLORS
+    // --color-primary: #000;
+    // --color-primary-light: #000;
+    // --color-primary-dark: #000;
+
+    // --color-primary-rgba: 0, 0, 0;
+    // --color-primary-light-rgba: 0, 0, 0;
+    // --color-primary-dark-rgba: 0, 0, 0;
+
+    // --color-secondary-light: #000;
+    // --color-secondary-dark: #000;
+  
+    // --color-tertiary-light: #000;
+    // --color-tertiary-dark: #000;
+
+    // --color-white: #fff;
+    // --color-black: #000;
+
+    // --color-white-rgba: 255, 255, 255;
+    // --color-black-rgba: 0, 0, 0;
+
+    // // FONTS
+    // --font-size-default: 1.6rem;
+
+    // // BOX-SHADOWS
+    // // X-Y-BLUR
+    // --box-shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    // --box-shadow-light: 0 2rem 5rem rgba(var(--color-black-rgba), .06);
+
+    // // BORDERS
+    // --line: .1rem solid var(--color-black);
+}
+
+/* SASS VARIABLES */
+// COLOR VARIABLES
+$color-primary: #28abb9;
+$color-primary-dark: #1c7781;
+
+$color-secondary: #2d6187;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #28abb9;
+$color-grey-dark-2: #6D5D4B;
+
+// FONT VARIABLES
+$font-primary: 'Roboto', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// MEDIA QUERIES
+$bp-1800: 112.5em;
+$bp-1200: 75em;
+$bp-1100: 68.75em;
+$bp-1000: 62.5em;
+$bp-900: 56.25em;
+$bp-800: 50em;
+$bp-700: 43.75em;
+$bp-600: 37.5em;
+$bp-500: 31.25em;

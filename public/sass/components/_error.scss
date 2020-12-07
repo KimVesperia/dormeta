@@ -1,0 +1,14 @@
+@supports(display: grid) {
+    .error { display: none; }
+}
+
+.error {
+    position: fixed;
+    background-color: $color-white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    font-size: rem(50);
+    text-align: center;
+    padding: 10%;
+}

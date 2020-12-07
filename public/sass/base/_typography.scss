@@ -1,0 +1,40 @@
+//extend = selectors are copied
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: rem(45);
+    color: $color-white;
+    line-height: 1;
+    margin: 0;
+    text-shadow: rem(2) rem(2) rem(5) rgba($color-black, 1);
+    grid-row: 3 / 4;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: rem(40);
+    font-style: italic;
+    line-height: 1;
+
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: rem(16);
+    color: $color-primary;
+    text-transform: uppercase;
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: rem(19);
+
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-grey-dark-1; }
+}

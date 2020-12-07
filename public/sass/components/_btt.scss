@@ -1,0 +1,50 @@
+// BACK TO TOP
+/* scroll to top btn, hide by default */
+.btt {
+    position: relative;
+    z-index: 20;
+    grid-column: center-end / -1;
+
+    &__link:link,
+    &__link:visited {
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+  }
+  
+.btt__sticky,
+.btt__sticky:link,
+.btt__sticky:visited {
+opacity: .5;
+bottom: 5vw;
+right: 5vw;
+position: fixed;
+background-color: rgba($color-black, .5);
+padding: rem(5);
+border: rem(1) solid rgba($color-black, .5);
+line-height: 0;
+cursor: pointer;
+animation: moveInbtt 2s ease;
+text-decoration: none;
+color: $color-black;
+}
+
+.btt__sticky:hover {
+opacity: 1;
+color: $color-primary;
+background-color: rgba($color-secondary, .3);
+border: rem(1) solid $color-primary;
+@include transition;
+}
+
+.btt__icon {
+display: none;
+}
+
+.btt__sticky .btt__icon {
+font-size: rem(30);
+display: inline-block;
+}

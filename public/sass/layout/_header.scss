@@ -1,0 +1,86 @@
+// Header
+.header {
+    background-color: $color-grey-dark-1;
+
+    grid-column: full-start / -1;
+
+    background-image: linear-gradient(rgba($color-black, .7)), url(../img/hero3.jpg);
+    background-size: cover;
+    background-position: 0 30%;
+    background-attachment: fixed;
+    padding: rem(80) 0 rem(80) 0;
+    padding-top: rem(20);
+
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(rem(60), min-content) 1fr;
+    // same as parent
+    grid-template-columns: [full-start] minmax(rem(60), 1fr) [center-start] repeat(8, [col-start] minmax(min-content, rem(140)) [col-end]) [center-end] minmax(rem(60), 1fr) [full-end];
+
+    row-gap: rem(15);
+
+    @include respond($bp-600) { // max-width < 600px
+        padding: rem(50) 0 rem(50) 0;
+    }
+
+    // grid column placement
+    & > * {
+        grid-column: center-start / center-end;
+    }
+
+    // h3 txt
+    &__heading-3 {
+        grid-row: 2 / 3;
+        text-shadow: rem(1) rem(1) rem(2) rgba($color-black, 1);
+    }
+
+    &__btn:link,
+    &__btn:visited {
+        // align horizontal and vertical btn
+        align-self: start; // vertical
+        justify-self: start; // horizontal
+        grid-row: 4 / 5;
+
+        text-decoration: none;
+        font-weight: initial;
+        line-height: initial;
+    }
+
+    &__seenon-text {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: rem(15);
+        align-items: center; // align horizontal
+        grid-row: 5 / 6;
+
+        font-size: rem(16);
+        color: $color-grey-light-2;
+
+        &::before,
+        &::after {
+            content: "";
+            height: rem(1);
+            display: block;
+            background-color: currentColor;
+        }
+    }
+
+    &__seenon-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: rem(30);
+        justify-items: center;
+        align-items: center;
+        grid-row: 6 / 7;
+
+        img {
+            max-height: rem(25);
+            max-width: 100%;
+            filter: brightness(70%);
+
+            @include respond($bp-600) { // max-width < 600px
+                max-width: 125%;
+            }
+        }
+        
+    }
+}

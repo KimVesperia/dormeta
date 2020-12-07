@@ -1,0 +1,120 @@
+// Sass Mixins
+// clearfix for floats
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin pulse-logo {
+    animation: pulsate-1 2s ease;
+}
+
+@mixin center-block {
+    margin: 0 auto;
+}
+
+@mixin same-dim($dim) {
+    height: $dim;
+    width: $dim;
+}
+
+@mixin transition {
+    transition: all .2s;
+}
+
+@mixin outline {
+    outline: solid $color-primary-dark;
+}
+
+@mixin outline-default {
+    outline: none;
+    box-shadow: 0 .1rem 1rem rgba(var(--color-primary-rgba), 1);
+    transition: all .5s;
+}
+
+// MEDIA QUERY MANAGER
+/* BREAKPOINTS
+
+$breakpoint argument choices:
+max-width
+000 - 500px:    $bp-500
+500 - 600px:    $bp-500
+600 - 900px:    $bp-900
+900 - 1200px:   $bp-1200
+[1200 - 1800]:   normal styles
+
+min-width
+1800px + :      $bp-1800
+
+
+NOTES
+more accessible to use em for when a user set a browser font size
+- rem and em not defined by root size but browser default 16px
+- ems are best option
+
+1em = 16px
+600px = 600/16 = 37.5em
+
+ORDER: Base + typography > general layout + grid > page layout > component
+*/
+
+// if directive with content
+@mixin respond($breakpoint) {
+    @if $breakpoint == $bp-500 {
+        @media only screen and (max-width: 31.25em) {@content}; //500px
+    }
+
+    @if $breakpoint == $bp-600 {
+        @media only screen and (max-width: 37.5em) {@content}; //600px
+    }
+
+    @if $breakpoint == $bp-700 {
+        @media only screen and (max-width: 43.75em) {@content}; //700px
+    }
+
+    @if $breakpoint == $bp-800 {
+        @media only screen and (max-width: 50em) {@content}; //800px
+    }
+
+    @if $breakpoint == $bp-900 {
+        @media only screen and (max-width: 56.25em) {@content}; //900px
+    }
+
+    @if $breakpoint == $bp-1000 {
+        @media only screen and (max-width: 62.5em) {@content}; //1000px
+    }
+
+    @if $breakpoint == $bp-1100 {
+        @media only screen and (max-width: 68.75em) {@content}; //1100px
+    }
+
+    @if $breakpoint == $bp-1200 {
+        @media only screen and (max-width: 75em) {@content}; //1200px
+    }
+
+    @if $breakpoint == $bp-1800 {
+        @media only screen and (min-width: 112.5em) {@content}; //1800px
+    }
+}
+
+// USAGE
+// Desktop first: big to low because last one will apply
+/*
+    @include respond($bp-1800) { // min-width > 1800
+        font-size: 75%; //1rem = 12px, 12/16 = 75%
+    }
+
+    @include respond($bp-1200) { // max-width < 1200
+        font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+    }
+*/

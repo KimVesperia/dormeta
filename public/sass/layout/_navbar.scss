@@ -1,0 +1,68 @@
+.navbar {
+    background-color: $color-primary;
+
+    grid-column: full-start / -1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center; // align vertical when direction reversed
+    padding: rem(10);
+    border-bottom: rem(5) solid $color-secondary;
+
+    font-size: 62.5%;
+
+    &__link:link,
+    &__link:visited {
+        margin-left: rem(55);
+
+        &:hover {
+            animation: pulsate-1 2s infinite;
+        }
+
+        &:focus {
+            outline: none;
+            animation: pulsate-1 2s infinite;
+        }
+    }
+
+    &__logo {
+        height: stretch;
+        cursor: pointer;
+        backface-visibility: hidden;
+
+    }
+}
+
+// hamburger
+.menu-nav {
+    align-self: flex-end;
+
+    cursor: pointer;
+
+    &__btn {
+        border: none;
+        border-radius: none;
+        background-color: $color-white;
+        height: rem(2);
+        width: rem(45);
+        margin-right: rem(55);
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            background-color: $color-white;
+            height: rem(2);
+            width: rem(45);
+            cursor: pointer;
+            content: "";
+            // no text and force lb
+            display: block;
+        }
+    
+        &::before { transform: translateY(rem(-11)); }
+        &::after { transform: translateY(rem(9)); }
+    }
+
+}

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Instruct Internet Explorer to use its latest rendering engine -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- scale for all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Dormeta &mdash; your personal space</title>
+                
+        <!-- 160 characters max -->
+        <meta name="description" content="Let Dormeta search for the most suitable dorm and adjusted to your preference! Not sure what to look for? Ask our expert advisers from Dormeta.">
+        <meta name="keywords" content="dorms, students, room"> 
+        
+        <meta name="robots" content="follow">
+
+        <!-- makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. 
+        https://necolas.github.io/normalize.css/ -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+        
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700,900|Josefin+Sans:300,400,400i" rel="stylesheet">
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="css/main.min.css">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/png" href="img/favicon-new.png">
+    </head>
+
+    <!-- MAIN CSS GRID -->
+    <body class="container">
+        
+        <div class="navbar">
+            <a href="#" class="navbar__link js--reload">
+                <img src="img/logo-new.png" alt="Dormeta logo" class="navbar__logo">
+            </a>
+            <nav class="menu-nav">
+                <button class="menu-nav__btn"></button>
+            </nav>
+        </div>
+
+        <header class="header">
+            <h3 class="heading-3 header__heading-3">Your personal space</h3>
+            <h1 class="heading-1">A students freedom</h1>
+            <a href="#section-dorms" class="btn header__btn js--scroll-from-header"><span>View all dorms</span></a>
+
+            <div class="header__seenon-text">As seen on</div>
+            <div class="header__seenon-logos">
+                <img src="img/funimation-logo.png" alt="Funimation logo">
+                <img src="img/crunchyroll-logo.png" alt="Crunchyroll logo">
+                <img src="img/kadokawa-logo.png" alt="Kadokawa logo">
+                <img src="img/aniplex-logo.png" alt="Aniplex logo">
+                
+            </div>
+        </header>
+
+        <section class="features">
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-global"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">
+                    World's best luxury dorms
+                </h4>
+                <p class="feature__text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.
+                </p>
+            </div>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-trophy"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">
+                    Only the best students
+                </h4>
+                <p class="feature__text">
+                    Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.
+                </p>
+            </div>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">
+                    All dorms in top locations
+                </h4>
+                <p class="feature__text">
+                    Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.
+                </p>
+            </div>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">
+                    New dorm in one week
+                </h4>
+                <p class="feature__text">
+                    Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-presentation"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">
+                    Top quality value
+                </h4>
+                <p class="feature__text">
+                    Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.
+                </p>
+            </div>
+
+            <div class="feature">
+                <svg class="feature__icon">
+                    <use xlink:href="img/sprite.svg#icon-lock"></use>
+                </svg>
+                <h4 class="heading-4 heading-4--dark">
+                    Secure payments on Dormeta
+                </h4>
+                <p class="feature__text">
+                    Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.
+                </p>
+            </div>
+
+        </section>
+
+        <div class="story__pictures">
+            <img src="img/story-1.jpg" alt="Student with new dorm" class="story__img--1">
+            <img src="img/story-2.jpg" alt="Students smiling in the dorm" class="story__img--2">
+        </div>
+
+        <div class="story__content">
+            <h3 class="heading-3 mb-sm">Happy Students</h3>
+            <h2 class="heading-2 heading-2--dark mb-md">&ldquo;The best decision of our lives&rdquo;</h2>
+            <p class="story__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+            </p>
+            <button class="btn">Find your own dorm</button>
+        </div>
+
+        <section id="section-dorms" class="dorms">
+
+            <div class="dorm">
+                <img src="img/dorm-1.jpg" alt="Dorm 1" class="dorm__img">
+                <svg class="dorm__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+
+                <h5 class="dorm__name">Classical Dorm</h5>
+                <div class="dorm__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>Amsterdam</p>
+                </div>
+
+                <div class="dorm__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>3 rooms</p>
+                </div>
+
+                <div class="dorm__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>225 m<sup>2</sup></p>
+                </div>
+
+                <div class="dorm__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>€700 p/m</p>
+                </div>
+
+                <button class="btn dorm__btn">Contact Owner</button>
+            </div>
+
+            <div class="dorm">
+                <img src="img/dorm-2.jpg" alt="Dorm 2" class="dorm__img">
+                <svg class="dorm__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+
+                <h5 class="dorm__name">Modern Dorm</h5>
+                <div class="dorm__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>The Hague</p>
+                </div>
+
+                <div class="dorm__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>4 rooms</p>
+                </div>
+
+                <div class="dorm__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>325 m<sup>2</sup></p>
+                </div>
+
+                <div class="dorm__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>€850 p/m</p>
+                </div>
+
+                <button class="btn dorm__btn">Contact Owner</button>
+            </div>
+
+            <div class="dorm">
+                <img src="img/dorm-3.jpg" alt="Dorm 3" class="dorm__img">
+                <svg class="dorm__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+
+                <h5 class="dorm__name">Country Dorm</h5>
+                <div class="dorm__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>Leiden</p>
+                </div>
+
+                <div class="dorm__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>3 rooms</p>
+                </div>
+
+                <div class="dorm__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>225 m<sup>2</sup></p>
+                </div>
+
+                <div class="dorm__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>€400 p/m</p>
+                </div>
+
+                <button class="btn dorm__btn">Contact Owner</button>
+            </div>
+
+            <div class="dorm">
+                <img src="img/dorm-4.jpg" alt="Dorm 4" class="dorm__img">
+                <svg class="dorm__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+
+                <h5 class="dorm__name">Villa Dorm</h5>
+                <div class="dorm__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>Rotterdam</p>
+                </div>
+
+                <div class="dorm__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>5 rooms</p>
+                </div>
+
+                <div class="dorm__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>525 m<sup>2</sup></p>
+                </div>
+
+                <div class="dorm__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>€900 p/m</p>
+                </div>
+
+                <button class="btn dorm__btn">Contact Owner</button>
+            </div>
+
+            <div class="dorm">
+                <img src="img/dorm-5.jpg" alt="Dorm 5" class="dorm__img">
+                <svg class="dorm__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+
+                <h5 class="dorm__name">Palace Dorm</h5>
+                <div class="dorm__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>Utrecht</p>
+                </div>
+
+                <div class="dorm__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>6 rooms</p>
+                </div>
+
+                <div class="dorm__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>725 m<sup>2</sup></p>
+                </div>
+
+                <div class="dorm__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>€650 p/m</p>
+                </div>
+
+                <button class="btn dorm__btn">Contact Owner</button>
+            </div>
+
+            <div class="dorm">
+                <img src="img/dorm-6.jpg" alt="Dorm 6" class="dorm__img">
+                <svg class="dorm__like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                </svg>
+
+                <h5 class="dorm__name">Cyberpunk</h5>
+                <div class="dorm__location">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>Eindhoven</p>
+                </div>
+
+                <div class="dorm__rooms">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+                    </svg>
+                    <p>4 rooms</p>
+                </div>
+
+                <div class="dorm__area">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-expand"></use>
+                    </svg>
+                    <p>500 m<sup>2</sup></p>
+                </div>
+
+                <div class="dorm__price">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-key"></use>
+                    </svg>
+                    <p>€950 p/m</p>
+                </div>
+
+                <button class="btn dorm__btn">Contact Owner</button>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <img src="img/gal-1.jpeg" alt="Gallery image 1" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2">
+                <img src="img/gal-2.jpeg" alt="Gallery image 2" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--3">
+                <img src="img/gal-3.jpeg" alt="Gallery image 3" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--4">
+                <img src="img/gal-4.jpeg" alt="Gallery image 4" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--5">
+                <img src="img/gal-5.jpeg" alt="Gallery image 5" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--6">
+                <img src="img/gal-6.jpeg" alt="Gallery image 6" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--7">
+                <img src="img/gal-7.jpeg" alt="Gallery image 7" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--8">
+                <img src="img/gal-8.jpeg" alt="Gallery image 8" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--9">
+                <img src="img/gal-9.jpeg" alt="Gallery image 9" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--10">
+                <img src="img/gal-10.jpeg" alt="Gallery image 10" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--11">
+                <img src="img/gal-11.jpeg" alt="Gallery image 11" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--12">
+                <img src="img/gal-12.jpeg" alt="Gallery image 12" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--13">
+                <img src="img/gal-13.jpeg" alt="Gallery image 13" class="gallery__img">
+            </figure>
+
+            <figure class="gallery__item gallery__item--14">
+                <img src="img/gal-14.jpeg" alt="Gallery image 14" class="gallery__img">
+            </figure>
+
+            <!-- EMMET
+                (figure.gallery__item.gallery__item--$>img.gallery__img[src="img/gal-$.jpeg"][alt="Gallery image $"])*14 -->
+        </section>
+
+        
+        <footer class="footer">
+            <ul class="nav">
+                <li class="nav__items"><a href="#" class="nav__link">Find the best dorm</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Request proposal</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Download room planner</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Submit your dorm</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">Contact us</a></li>
+                <li class="nav__items"><a href="#" class="nav__link">About us</a></li>
+            </ul>
+            <p class="copyright"></p>
+        </footer>
+
+        <div class="btt">
+            <!-- btt__sticky gets added here with jQuery -->
+            <a href="#" class="btt__link js--scroll-to-header js--wp-back">
+                <div class="btt__icon arrow-arrows-up"></div>
+            </a>
+        </div>
+
+        <div class="error">
+            <p>This browser does not support CSS Grid, please update or use a different browser.
+            Visit <a href="https://caniuse.com/?search=css-grid">caniuse.com</a> for compatible browsers.</p>
+        </div>
+		
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="/__/firebase/8.1.2/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="/__/firebase/8.1.2/firebase-analytics.js"></script>
+
+		<!-- Initialize Firebase -->
+		<script src="/__/firebase/init.js"></script>
+		
+		<script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyBiP0GgL3LOM9OvevhFZYDCxn26zbL2lLw",
+                authDomain: "dormeta.firebaseapp.com",
+                databaseURL: "https://cafe-ngoc.firebaseio.com",
+                projectId: "cafe-ngoc",
+                storageBucket: "cafe-ngoc.appspot.com",
+                messagingSenderId: "719435468130",
+                appId: "1:719435468130:web:f008ef823325b1c8ddb03b",
+                measurementId: "G-5J58G4B6RE"
+            };
+            firebase.analytics();
+        </script>
+
+        <!-- scripts -->
+        <!-- jQuery - google cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- html5 and css3 for older browsers fix -->
+        <!-- https://www.jsdelivr.com/ -->
+        <!-- min/max-width media query polyfill -->
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+
+        <!-- The HTML5 Shiv enables use of HTML5 sectioning elements in legacy browsers -->
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        
+        <!-- selectivizr is a JavaScript utility that emulates CSS3 pseudo-classes - IE 6-8 -->
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+        
+        <!-- sticky jquery plugin -->
+        <script src="js/jquery.waypoints.min.js"></script>
+
+        <!-- custom js minified -->
+        <script src="js/script.min.js"></script>
+        <!-- <script src="js/script.js"></script> -->
+
+    </body>
+    
+</html>

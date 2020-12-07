@@ -1,0 +1,87 @@
+.dorms {
+    margin: rem(150) 0;
+
+    grid-column: center-start / center-end;
+
+    display: grid;
+    // responsive
+    grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
+    gap: rem(70);
+
+    @include respond($bp-700) { // max-width < 700px
+        margin: rem(75) 0;
+    }
+}
+
+.dorm {
+    background-color: $color-grey-light-1;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(35);
+
+    &__img {
+        width: 100%;
+        z-index: 5; // img behind like icon
+
+        grid-row: 1 / 2; // set row to overlap with icon
+        grid-column: 1 / -1;
+    }
+
+    &__like {
+        grid-row: 1 / 2;
+        grid-column: 2 / -1;
+        justify-self: end; // align icon to right
+
+        fill: $color-primary;
+        @include same-dim(rem(25));
+        margin: rem(10);
+        z-index: 10;
+    }
+
+    &__name {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        justify-self: center; // center item horizontal
+        align-self: end; // position vertical end
+
+        width: 80%;
+        font-family: $font-display;
+        font-size: rem(16);
+        text-align: center;
+        padding: rem(12.5);
+        background-color: $color-secondary;
+        color: $color-white;
+        font-weight: 400;
+        transform: translateY(50%); // align vertical between 2 rows
+        z-index: 10;
+    }
+
+    &__location,
+    &__rooms {
+        margin-top: rem(25);
+    }
+    
+    &__location,
+    &__rooms,
+    &__area,
+    &__price {
+        
+        font-size: rem(15);
+        margin-left: rem(20);
+
+        display: flex; // align icon with txt
+        align-items: center;
+        
+        gap: rem(10);
+
+        svg {
+            fill: $color-primary;
+            @include same-dim(rem(20));
+        }
+    }
+
+    &__btn {
+        grid-column: 1 / -1;
+    }
+}
