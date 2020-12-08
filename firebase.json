@@ -1,6 +1,6 @@
 {
   "hosting": {
-	"site": "dormeta",
+	"site": "dormeta-kimv",
     "public": "public",
     "ignore": [
       "firebase.json",
