@@ -7,4 +7,8 @@
     @include respond($bp-800) { // max-width < 800px
         grid-template-rows: rem(60) calc(100vh - 6rem);
     }
+
+    @include respond($bp-500) { // max-width < 500px
+        grid-template-rows: rem(60) calc(100vh - 12rem);
+    }
 }

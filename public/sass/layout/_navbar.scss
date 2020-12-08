@@ -17,18 +17,23 @@
     &__link:visited {
         margin-left: rem(55);
 
+        @include respond($bp-500) { // max-width < 500
+            margin-left: rem(10);
+        }
+
         &:hover {
-            // animation: pulsate-1 2s infinite;
+            animation: pulsate-1 2s infinite;
         }
 
         &:focus {
             outline: none;
-            // animation: pulsate-1 2s infinite;
+            animation: pulsate-1 2s infinite;
         }
     }
 
     &__logo {
-        height: stretch;
+        // height: stretch;
+        max-width: 50%;
         cursor: pointer;
         backface-visibility: hidden;
 
@@ -49,6 +54,10 @@
         width: rem(45);
         margin-right: rem(55);
         cursor: pointer;
+
+        @include respond($bp-500) { // max-width < 500
+            margin-right: rem(10);
+        }
 
         &::before,
         &::after {

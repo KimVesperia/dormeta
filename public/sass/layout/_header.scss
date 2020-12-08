@@ -8,7 +8,7 @@
     background-size: cover;
     background-position: 0 30%;
     background-attachment: fixed;
-    padding: rem(80) 0 rem(80) 0;
+    padding: rem(80) 0;
     padding-top: rem(20);
 
     display: grid;
@@ -19,12 +19,17 @@
     row-gap: rem(15);
 
     @include respond($bp-600) { // max-width < 600px
-        padding: rem(50) 0 rem(50) 0;
+        padding: rem(50) 0;
     }
 
     // grid column placement
     & > * {
         grid-column: center-start / center-end;
+
+        @include respond($bp-500) { // max-width < 500px
+            grid-column: full-start / full-end;
+            margin: 0 rem(20);
+        }
     }
 
     // h3 txt

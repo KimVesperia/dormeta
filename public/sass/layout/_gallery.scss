@@ -8,6 +8,10 @@
     gap: rem(15);
     padding: rem(15);
 
+    @include respond($bp-500) { // max-width < 500px
+        padding: rem(30);
+    }
+
     &__item {
         &--1 {
             grid-row: 1 / span 2;

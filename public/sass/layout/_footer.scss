@@ -8,6 +8,10 @@
     @include respond($bp-600) { // max-width < 600px
         padding: rem(40);
     }
+
+    @include respond($bp-500) { // max-width < 500px
+        padding: rem(30);
+    }
 }
 
 .nav {
