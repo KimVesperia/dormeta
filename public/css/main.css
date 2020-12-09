@@ -393,7 +393,7 @@ button:focus::after,
   position: fixed;
   right: 0;
   z-index: 99;
-  width: 2%;
+  width: 4rem;
   top: 50%;
 }
 
